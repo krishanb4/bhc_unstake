@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <Head>
         <title>BillionHappiness Unstake</title>
-        <meta name="description" content="IgnoreFud Dashboard" />
+        <meta name="description" content="BillionHappiness Unstake" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
