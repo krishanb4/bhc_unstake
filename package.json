@@ -19,7 +19,7 @@
         "@reduxjs/toolkit": "^1.9.5",
         "@types/node": "18.15.11",
         "@types/numeral": "^2.0.2",
-        "@types/react": "18.0.33",
+        "@types/react": "^18.2.46",
         "@types/react-dom": "18.0.11",
         "@walletconnect/universal-provider": "^2.7.8",
         "@web3modal/ethereum": "^2.4.3",
