@@ -11,12 +11,12 @@ const StakingCards = () => {
   const [pools, setPools] = React.useState<PoolConfig[]>(poolsFrom);
 
   useEffect(() => {
-    if (chain?.id === 56) {
+    if (chain?.id == 56) {
       const filteredPools = poolsFrom.filter(
         (pool: PoolConfig) => !pool.isAvax
       );
       setPools(filteredPools);
-    } else {
+    } else if (chain?.id == 43114) {
       const filteredPools = poolsFrom.filter((pool: PoolConfig) => pool.isAvax);
       setPools(filteredPools);
     }
