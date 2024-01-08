@@ -148,6 +148,7 @@ export function useContracts(contractaddress: `0x${string}`, arg?: ClaimArgs) {
   const { data, isLoading, isSuccess, write, status } = useContractWrite({
     ...config,
   });
+  console.log(data);
 
   return { data, isLoading, isSuccess, write, status };
 }
