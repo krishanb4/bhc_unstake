@@ -350,7 +350,8 @@ const PoolCard: React.FC<React.PropsWithChildren<PoolCardProps>> = ({
   );
 
   const contractCallDirrect = useContractDirrect(
-    getAddress(pool.contractAddress, chain?.id) as `0x${string}`
+    getAddress(pool.contractAddress, chain?.id) as `0x${string}`,
+    eligibleAmount
   );
 
   const transaction = useTransaction(contractCall.data?.hash);

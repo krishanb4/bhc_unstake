@@ -153,14 +153,19 @@ export function useContracts(contractaddress: `0x${string}`, arg?: ClaimArgs) {
   return { data, isLoading, isSuccess, write, status };
 }
 
-export function useContractDirrect(contractaddress: `0x${string}`) {
+export function useContractDirrect(
+  contractaddress: `0x${string}`,
+  amount: number
+) {
   const { config } = usePrepareContractWrite({
     address: contractaddress,
     abi: oldContract,
     functionName: "withdraw",
+    args: [(amount * 10 ** 18).toString()],
   });
   const { data, isLoading, isSuccess, write, status } =
     useContractWrite(config);
+  console.log(data);
   return { data, isLoading, isSuccess, write, status };
 }
 
