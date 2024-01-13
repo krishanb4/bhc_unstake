@@ -117,7 +117,7 @@ const PoolCard: React.FC<React.PropsWithChildren<PoolCardProps>> = ({
 
         setStaked(staked_amount);
         setEligibleAmount(staked_amount);
-        if (staked_amount > 0) {
+        if (staked_amount > 0.001) {
           setIsEligible(true);
         }
 

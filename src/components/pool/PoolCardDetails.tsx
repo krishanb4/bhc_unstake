@@ -11,7 +11,7 @@ const PoolCardDetails: React.FC<
   return (
     <div className="flex justify-center col-span-2 space-x-4">
       <span className="px-4 py-2 text-white hidden md:flex col-span-2 justify-center">
-        {Number(tvl) > 0 ? tvl : 0} {name}
+        {Number(tvl) > 0.001 ? tvl : 0} {name}
       </span>
     </div>
   );
