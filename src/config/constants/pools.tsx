@@ -411,6 +411,38 @@ const pools: PoolConfig[] = [
       1116: `https://exchange.archerswap.finance/swap?outputCurrency=0x98564e70c7fcc6d947ffe6d9efed5ba68b306f2e`,
     },
   },
+  {
+    poolId: 14,
+    name: "FeelingAwesome",
+    tokenName: "BHC",
+    claimId: 5,
+    isIdClaim: true,
+    token: tokens.fourtoken,
+    locked: false,
+    stakingToken: {
+      56: "0x9673f9fe264eD0af19ED18d1aC848F384f8fB5F9",
+      1116: "0x98564e70c7fcc6d947ffe6d9efed5ba68b306f2e",
+    },
+    earningToken: {
+      56: "0x61B83eDF87Ea662C695439A807c386455c9E797C",
+      1116: "0x98564e70c7fcc6d947ffe6d9efed5ba68b306f2e",
+    },
+    contractAddress: {
+      56: "0x5Ec9CB98CB4DB83a7941e99fAf15268F13E8dA2b",
+    },
+    isLp: false,
+    isDirrect: true,
+    poolCategory: PoolCategory.NO_LOCK,
+    harvest: true,
+    sortOrder: 1,
+    factor: 0.000003,
+    factorCore: 1,
+    isFinished: false,
+    buyURL: {
+      56: `https://pancakeswap.finance/v2/add/0x61B83eDF87Ea662C695439A807c386455c9E797C/BNB`,
+      1116: `https://exchange.archerswap.finance/swap?outputCurrency=0x98564e70c7fcc6d947ffe6d9efed5ba68b306f2e`,
+    },
+  },
 ];
 
 export default pools;
