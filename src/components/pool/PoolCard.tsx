@@ -489,13 +489,13 @@ const PoolCard: React.FC<React.PropsWithChildren<PoolCardProps>> = ({
       >
         <div className="flex items-center col-span-1">
           <Image src="/images/bhc.png" alt="" width={30} height={30} />
-          <div className="grid grid-cols-1 gap-1 text-left">
+          <div className="grid grid-cols-2 gap-1 text-left">
             <span className="font-medium text-white text-[15px] ml-[10px]">
               {pool.name}
             </span>
-            {/* <span className=" text-gray-400 text-sm flex-none ml-[10px] ">
+            {/* <div className=" text-gray-400 text-sm flex-none ml-[10px] ">
               {pool.poolCategory}
-            </span> */}
+            </div> */}
           </div>
         </div>
 
