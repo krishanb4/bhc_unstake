@@ -161,7 +161,7 @@ export function useContractDirrect(
     address: contractaddress,
     abi: oldContract,
     functionName: "withdraw",
-    args: [(amount * 10 ** 18).toString()],
+    args: [(Math.floor(amount) * 10 ** 18).toString()],
   });
   const { data, isLoading, isSuccess, write, status } =
     useContractWrite(config);
